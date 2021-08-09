@@ -9,6 +9,11 @@ yarn android
 ### 安装:npm i
 ### 运行 npm run android
 
+### 异步请求
+request：/src/utils/request.ts
+上传文件：/src/utils/requestUpload.ts
+请求示例：/src/services/test.ts 
+
 ### 组件库：react-native-elements
 地址：https://reactnativeelements.com/docs/
 #### 图标：react-native-vector-icons
@@ -24,8 +29,6 @@ https://oblador.github.io/react-native-vector-icons/
 ### 调试：react-native-debugger 
 地址：https://github.com/jhen0409/react-native-debugger
 
-### 异步请求
-/src/utils/request.ts
 
 
-# logmei_react_native
+
