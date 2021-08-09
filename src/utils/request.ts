@@ -30,7 +30,7 @@ export const requestUpload = async (
   option: RequestOptParams = {method: 'get'},
   rest?: any,
 ) => {
-  const authrization = await AsyncStorage.getItem('test');
+  const authrization = await AsyncStorage.getItem('token');
   console.log('authrization', authrization);
   const header = {
     'content-type': 'multipart/form-data',
@@ -61,7 +61,7 @@ const request = async (
   option: RequestOptParams = {method: 'get'},
   rest?: any,
 ) => {
-  const authrization = await AsyncStorage.getItem('test');
+  const authrization = await AsyncStorage.getItem('token');
   console.log('authrization', authrization);
   const header = {
     'content-type': option.contentType || 'application/json',

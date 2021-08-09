@@ -18,6 +18,7 @@
     "babel-plugin-root-import": "^6.6.0",
     "lodash": "^4.17.21",
     "react": "17.0.1",
+    "qs": "^6.10.1",
     "react-native": "0.64.1",
     "react-native-camera": "^3.44.3",
     "react-native-elements": "^3.4.2",
