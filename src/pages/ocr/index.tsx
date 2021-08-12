@@ -1,4 +1,5 @@
 // import {useAsyncStorage} from '@react-native-async-storage/async-storage';
+import NavBar from '@/components/NavBar';
 import {useRoute} from '@react-navigation/core';
 import React, {useEffect, useState} from 'react';
 import {StatusBar, View, StyleSheet, ImageBackground} from 'react-native';
@@ -34,6 +35,7 @@ const OcrImage: React.FC = () => {
   return (
     <View style={{flex: 1}}>
       <StatusBar backgroundColor="transparent" translucent={true} />
+      <NavBar title="拍照识别" barStyle="dark-content" />
       <ImageBackground source={{uri: imageUrl}} style={styles.image}>
         <View style={{marginTop: 300}}>
           <CodeInput

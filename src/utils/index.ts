@@ -1,4 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
+
 const DESIGN_WIDTH = 375; // 设计稿的宽度
 export const DefaultPageParams = {
   pageSize: 8,

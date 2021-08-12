@@ -16,6 +16,7 @@ instance.interceptors.response.use(
       return response.data;
     } else {
       Alert.alert('请求失败' + response.status, response.data.msg);
+      Promise.reject(response.data);
     }
   },
   error => {

@@ -1,6 +1,7 @@
 import {RequestOptParams} from '@/global/data';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+import NavigationService from './navigationService';
 
 const instance = axios.create({
   baseURL: 'http://www.baidu.com',

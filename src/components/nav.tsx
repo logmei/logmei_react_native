@@ -1,6 +1,7 @@
 import React from 'react';
 import Login from '../pages/login';
 import Home from '../pages/home';
+import Record from '../pages/record';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import BarCodePage from './BarCodePage';
@@ -21,6 +22,8 @@ const Nav = () => {
         <Stack.Screen name="BarCodePage" component={BarCodePage} />
         {/* 扫描后的展示图片页面 */}
         <Stack.Screen name="OcrPage" component={OcrPage} />
+        {/* 列表页面 */}
+        <Stack.Screen name="Record" component={Record} />
         {/* 设备定位 */}
         <Stack.Screen name="Location" component={Location} />
       </Stack.Navigator>

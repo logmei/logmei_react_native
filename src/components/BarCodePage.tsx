@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import {RNCamera} from 'react-native-camera';
 import Icon from 'react-native-vector-icons/AntDesign';
+import {RootContext} from '../../App';
 
 const Height = () => {
   return Dimensions.get('window').height;
@@ -44,6 +45,7 @@ class BarCodePage extends Component<PropsType, StateType> {
     animateCode: new Animated.Value(10),
   };
   camera: any;
+  static contextType = RootContext;
   constructor(props: any) {
     super(props);
   }
@@ -90,7 +92,9 @@ class BarCodePage extends Component<PropsType, StateType> {
 
   // 关闭扫一扫
   closeScanPage() {
-    // this.props.navigation.navigate('TestPage');;
+    const {toggleTab} = this.context;
+    toggleTab(0);
+    this.props.navigation.navigate('Home');
   }
 
   /*
